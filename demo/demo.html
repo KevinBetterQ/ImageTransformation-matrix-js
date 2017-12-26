@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>图片推移</title>
+	<style>
+		body {
+			background: #000 ;
+			color: #ddd;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="contDOM">
+		<div id="dom">
+			<img src="1.jpg" style="position:absolute; top:0;left:0">
+			<img src="2.jpg" style="position:relative; top:150px;left:150px" width="300" height="150">
+		</div>
+	</div>
+	<script src="matrix.min.js"></script>
+	<script>
+		var dom = document.querySelector("#dom");
+		enterTheMatrix();
+		function enterTheMatrix() {
+			var m = new Matrix(null, dom)
+				.translate(350, 50)//x轴和y轴
+				.rotateDeg(0)//旋转角度
+				.scale(1,1)//伸缩
+				.skewDeg(-24, 0);//推移
+		}
+
+	</script>
+</body>
+
+</html>

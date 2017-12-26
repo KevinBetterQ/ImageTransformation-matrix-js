@@ -1,6 +1,12 @@
 2D Affine Transformation Matrix
 ===============================
 
+clone说明：根据需要进行了一些裁剪，目前demo只剩下一个图片推移的例子了。
+
+
+2D Affine Transformation Matrix
+===============================
+
 An affine transformation matrix (3x3) class for JavaScript that performs various transformations such as rotate, scale, translate, skew, shear, add, subtract, multiply, divide, inverse, decomposing, animation, converting to and from a SVG/DOM matrix, creating matrix from triangles and more (full HTML documentation is included).
 
 It's primarily intended for situations where you need to track or create transforms and want to apply it permanently/manually to your own points and polygons, or when you need cross-browser compatibility.
